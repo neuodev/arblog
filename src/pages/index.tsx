@@ -1,10 +1,15 @@
-import { Post, getPosts } from "src/lib/posts";
+import { IPost, Post, getPosts } from "src/lib/posts";
 import React, { useCallback } from "react";
 
-const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
+const Home: React.FC<{ posts: Array<IPost> }> = ({ posts }) => {
   return (
     <main className="">
-      <div dangerouslySetInnerHTML={{ __html: posts[0].body }} />
+      {posts.map((post) => (
+        <div key={post.slug}>
+          <h1>{post.header}</h1>
+          <p>{post.preview}</p>
+        </div>
+      ))}
     </main>
   );
 };
