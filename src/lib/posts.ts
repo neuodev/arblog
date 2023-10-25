@@ -34,6 +34,7 @@ async function readPostFile(filename: string): Promise<string> {
 // 1. use slug
 // 2. render posts
 // 3. render post
+// 4. about me
 
 export async function getPosts(): Promise<Array<IPost>> {
   const posts = await Promise.all(
@@ -64,6 +65,14 @@ export async function getPosts(): Promise<Array<IPost>> {
   );
 
   return posts;
+}
+
+export async function getPostBySlug(slug: string) {
+  const post = blog.posts.find((p) => p.slug == slug);
+  if (!post) throw new Error(`Post not found: ${slug}`);
+  const content = await readPostFile(post.filename);
+  const html = marked.parse(content);
+  return html;
 }
 
 export async function getPostById(id: number): Promise<Post> {

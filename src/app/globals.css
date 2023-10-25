@@ -10,7 +10,11 @@
 }
 
 html {
-  @apply bg-dark;
+  @apply bg-gray-50;
+}
+
+.link {
+  @apply text-blue-400 hover:text-blue-500 underline;
 }
 
 @scope (#post) {
