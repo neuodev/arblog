@@ -17,9 +17,13 @@ html {
   @apply text-blue-400 hover:text-blue-500 underline;
 }
 
+.btn-light {
+  @apply bg-gray-100 hover:bg-gray-200 shadow-md transition-colors px-2 py-3 cursor-pointer rounded-md;
+}
+
 @scope (#post) {
   h1 {
-    @apply text-4xl md:text-6xl font-bold mb-8;
+    @apply text-4xl md:text-6xl md:leading-snug font-bold mb-8;
   }
 
   h2 {
@@ -43,7 +47,7 @@ html {
   }
 
   p {
-    @apply font-medium text-base mb-4;
+    @apply font-medium text-base leading-loose mb-4;
   }
 
   a {

@@ -52,7 +52,7 @@ export async function getPosts(): Promise<Array<IPost>> {
 
       assert(
         preview.type === "paragraph",
-        `Unexpecting token: ${preview.type}, expecting "heading"`
+        `Unexpecting token: ${preview.type}, expecting "paragraph"`
       );
 
       return {

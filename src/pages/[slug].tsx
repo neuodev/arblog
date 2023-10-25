@@ -2,11 +2,18 @@ import { GetStaticPropsContext } from "next";
 import React from "react";
 import { getPostBySlug } from "src/lib/posts";
 import blog from "src/data/blog.json";
+import text from "src/data/text.json";
+import Link from "next/link";
 
 const Post: React.FC<{ content: string }> = ({ content }) => {
   return (
-    <div className="py-16 px-4">
-      <div id="post" className="max-w-screen-md mx-auto">
+    <div className="py-16 px-4 max-w-screen-md mx-auto">
+      <div className="mb-4">
+        <Link href="/" className="btn-light inline-block mb-4">
+          {text.backToHome}
+        </Link>
+      </div>
+      <div id="post">
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </div>
     </div>
