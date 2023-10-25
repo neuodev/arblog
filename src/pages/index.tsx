@@ -3,6 +3,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import text from "src/data/text.json";
+import AboutMe from "src/app/components/AboutMe";
 
 export const metadata: Metadata = {
   title: "My Posts",
@@ -10,7 +11,11 @@ export const metadata: Metadata = {
 
 const Home: React.FC<{ posts: Array<IPost> }> = ({ posts }) => {
   return (
-    <main className="max-w-screen-md mx-auto py-16 px-4">
+    <main className="max-w-screen-md mx-auto py-12 px-4">
+      <div className="mb-16">
+        <AboutMe />
+      </div>
+
       {posts.map((post) => (
         <div
           key={post.slug}
