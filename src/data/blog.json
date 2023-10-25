@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "slug": "my-first-arabic-post",
+      "filename": "01.my-first-post.md"
+    },
+    {
+      "slug": "my-second-arabic-post",
+      "filename": "02.my-second-post.md"
+    }
+  ]
+}
