@@ -38,7 +38,7 @@ const SOCIAL_LINKS = [
 
 const AboutMe: React.FC<{}> = () => {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-col justify-center items-center sm:flex-row gap-4">
       <Image
         width={200}
         height={200}
@@ -46,7 +46,7 @@ const AboutMe: React.FC<{}> = () => {
         alt={text.ahmedIbrahim}
       />
 
-      <div className="pt-10">
+      <div className="sm:pt-10">
         <h1 className="mb-1 text-sm">{text.aboutme.header}</h1>
         <p className="mb-3 font-medium">{text.aboutme.bdoy}</p>
 
