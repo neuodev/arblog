@@ -5,7 +5,7 @@ import blog from "src/data/blog.json";
 
 const Post: React.FC<{ content: string }> = ({ content }) => {
   return (
-    <div>
+    <div className="py-16 px-4">
       <div id="post" className="max-w-screen-md mx-auto">
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </div>
