@@ -1,13 +1,15 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import marked from "marked";
-import fm from "front-matter";
 import blog from "src/data/blog.json";
 import assert from "node:assert";
 import { isProd } from "./env";
+import { markedRenderer } from "./md-renderer";
 
 // note: this fille will be used from '.next/server'
 const POSTS_DIR = path.join(__dirname, "../../../src/posts");
+
+marked.use({ renderer: markedRenderer });
 
 export type Post = {
   slug: string;
@@ -49,7 +51,7 @@ export async function getPosts(): Promise<Array<Post>> {
           filename: post.filename,
           published: post.published,
           header: header.text,
-          preview: preview.text,
+          preview: marked.parse(preview.raw),
         };
       })
   );
