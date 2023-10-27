@@ -1,12 +1,14 @@
 {
   "posts": [
     {
-      "slug": "my-first-arabic-post",
-      "filename": "01.my-first-post.md"
+      "slug": "why-i-have-no-phone",
+      "filename": "why-i-have-no-phone.md",
+      "published": false
     },
     {
-      "slug": "my-second-arabic-post",
-      "filename": "02.my-second-post.md"
+      "slug": "why-i-left-medical-school",
+      "filename": "why-i-left-med-school.md",
+      "published": false
     }
   ]
 }

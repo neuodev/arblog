@@ -4,6 +4,7 @@ import { getPostBySlug } from "src/lib/posts";
 import blog from "src/data/blog.json";
 import text from "src/data/text.json";
 import Link from "next/link";
+import { isProd } from "src/lib/env";
 
 const Post: React.FC<{ content: string }> = ({ content }) => {
   return (
@@ -36,7 +37,9 @@ export async function getStaticProps(
 
 export async function getStaticPaths() {
   return {
-    paths: blog.posts.map((post) => `/${post.slug}`),
+    paths: blog.posts
+      .filter((post) => (isProd() ? post.published : true))
+      .map((post) => `/${post.slug}`),
     fallback: "blocking",
   };
 }
