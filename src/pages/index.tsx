@@ -1,15 +1,16 @@
-import { IPost, getPosts } from "src/lib/posts";
+import { Post, getPosts } from "src/lib/posts";
 import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import text from "src/data/text.json";
 import AboutMe from "src/app/components/AboutMe";
+import { isDev } from "src/lib/env";
 
 export const metadata: Metadata = {
   title: "My Posts",
 };
 
-const Home: React.FC<{ posts: Array<IPost> }> = ({ posts }) => {
+const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
   return (
     <main className="max-w-screen-md mx-auto py-12 px-4">
       <div className="mb-16">
@@ -30,6 +31,14 @@ const Home: React.FC<{ posts: Array<IPost> }> = ({ posts }) => {
               <span>{text.more}</span>
             </Link>
           </div>
+
+          {isDev() && !post.published && (
+            <div className="mt-4">
+              <span className="bg-amber-100 text-amber-500 px-2 py-1 rounded-full text-sm">
+                {text.notPublished}
+              </span>
+            </div>
+          )}
         </div>
       ))}
     </main>
