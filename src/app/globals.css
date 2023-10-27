@@ -63,11 +63,16 @@ html {
   }
 
   ul {
-    @apply list-disc list-inside mb-4;
+    @apply list-disc list-inside mb-4 gap-1;
   }
 
   ol {
     @apply list-decimal list-inside mb-4;
+  }
+
+  ul > li,
+  ol > li {
+    @apply mb-2;
   }
 
   hr {

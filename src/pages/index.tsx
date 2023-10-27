@@ -29,6 +29,7 @@ const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
               className="inline"
               dangerouslySetInnerHTML={{ __html: post.preview }}
             />
+            <span>...</span>
             <Link className="link" href={post.slug}>
               <span>{text.more}</span>
             </Link>
