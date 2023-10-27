@@ -5,6 +5,7 @@ import blog from "src/data/blog.json";
 import text from "src/data/text.json";
 import Link from "next/link";
 import { isProd } from "src/lib/env";
+import AboutMe from "src/app/components/AboutMe";
 
 const Post: React.FC<{ content: string }> = ({ content }) => {
   return (
@@ -16,6 +17,10 @@ const Post: React.FC<{ content: string }> = ({ content }) => {
       </div>
       <div id="post">
         <div dangerouslySetInnerHTML={{ __html: content }} />
+      </div>
+
+      <div className="my-20">
+        <AboutMe />
       </div>
     </div>
   );

@@ -77,4 +77,22 @@ html {
   img {
     @apply inline-block rounded-lg;
   }
+
+  .img-container {
+    @apply flex flex-col items-center justify-center my-4;
+  }
+
+  .img-caption {
+    @apply inline-block w-full text-center mt-2 text-sm italic max-w-sm;
+  }
+}
+
+@scope (#preview) {
+  a {
+    @apply text-blue-400 underline text-lg;
+  }
+
+  p {
+    @apply inline leading-8;
+  }
 }
