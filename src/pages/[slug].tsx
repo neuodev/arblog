@@ -1,28 +1,36 @@
-import { GetStaticPropsContext } from "next";
+import { GetStaticPropsContext, Metadata } from "next";
 import React from "react";
-import { getPostBySlug } from "src/lib/posts";
+import { Post, getPostBySlug } from "src/lib/posts";
 import blog from "src/data/blog.json";
 import text from "src/data/text.json";
 import Link from "next/link";
 import { isProd } from "src/lib/env";
 import AboutMe from "src/app/components/AboutMe";
+import Head from "next/head";
 
-const Post: React.FC<{ content: string }> = ({ content }) => {
+const Post: React.FC<{ post: Post }> = ({ post }) => {
   return (
-    <div className="py-16 px-4 max-w-screen-md mx-auto">
-      <div className="mb-4">
-        <Link href="/" className="btn-light inline-block mb-4">
-          {text.backToHome}
-        </Link>
-      </div>
-      <div id="post">
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      </div>
+    <>
+      <Head>
+        <title>
+          {post.header} | {text.ahmedIbrahim}
+        </title>
+      </Head>
+      <div className="py-16 px-4 max-w-screen-md mx-auto">
+        <div className="mb-4">
+          <Link href="/" className="btn-light inline-block mb-4">
+            {text.backToHome}
+          </Link>
+        </div>
+        <div id="post">
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
 
-      <div className="my-20">
-        <AboutMe />
+        <div className="my-20">
+          <AboutMe />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -33,10 +41,10 @@ export async function getStaticProps(
 ) {
   const slug = context.params?.slug;
   if (!slug) throw new Error("Invalid or missing post slug");
-  const content = await getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
 
   return {
-    props: { content },
+    props: { post },
   };
 }
 
