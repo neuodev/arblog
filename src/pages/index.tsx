@@ -11,6 +11,10 @@ const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
     <main className="max-w-screen-md mx-auto py-12 px-4">
       <Head>
         <title>{text.blogTitle}</title>
+        <meta property="og:title" content={text.blogTitle} />
+        <meta property="og:description" content={text.aboutme.bdoy} />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ar_AA" />
       </Head>
       <div className="mb-16">
         <AboutMe />
@@ -27,7 +31,7 @@ const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
           <div id="preview" className="inline">
             <div
               className="inline"
-              dangerouslySetInnerHTML={{ __html: post.preview }}
+              dangerouslySetInnerHTML={{ __html: post.preview.parsed }}
             />
             <span>...</span>
             <Link className="link" href={post.slug}>

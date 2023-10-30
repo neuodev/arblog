@@ -14,6 +14,10 @@ const Post: React.FC<{ post: Post }> = ({ post }) => {
       <Head>
         <title>
           {post.header} | {text.ahmedIbrahim}
+          <meta property="og:title" content={post.header} />
+          <meta property="og:description" content={post.preview.raw} />
+          <meta property="og:type" content="article" />
+          <meta property="og:locale" content="ar_AA" />
         </title>
       </Head>
       <div className="py-16 px-4 max-w-screen-md mx-auto">

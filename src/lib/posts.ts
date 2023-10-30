@@ -16,7 +16,7 @@ export type Post = {
   filename: string;
   published: boolean;
   header: string;
-  preview: string;
+  preview: { raw: string; parsed: string };
   html: string;
 };
 
@@ -50,7 +50,7 @@ async function loadPostInfo(
     filename: post.filename,
     published: post.published,
     header: header.text,
-    preview: marked.parse(preview.raw),
+    preview: { parsed: marked.parse(preview.raw), raw: preview.raw },
   };
 }
 
