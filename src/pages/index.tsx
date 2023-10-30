@@ -23,7 +23,7 @@ const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
       {posts.map((post) => (
         <div
           key={post.slug}
-          className="mb-8 shadow-xl p-4 rounded-lg ring-2 ring-gray-200 hover:bg-gray-100 transition-colors"
+          className="mb-8 shadow-xl dark:shadow-slate-900 p-4 rounded-lg ring-2 ring-gray-200 dark:ring-slate-900 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
         >
           <Link href={post.slug} className="block text-2xl font-bold mb-3 link">
             {post.header}

@@ -10,15 +10,15 @@
 }
 
 html {
-  @apply bg-gray-50;
+  @apply bg-gray-50 dark:bg-slate-800;
 }
 
 .link {
-  @apply text-blue-400 hover:text-blue-500 underline;
+  @apply text-sky-400 hover:text-sky-500 underline;
 }
 
 .btn-light {
-  @apply bg-gray-100 hover:bg-gray-200 shadow-md transition-colors px-2 py-3 cursor-pointer rounded-md;
+  @apply bg-gray-100 dark:bg-slate-700  hover:bg-gray-200 dark:hover:bg-slate-600 shadow-md transition-colors px-4 py-3 cursor-pointer rounded-md dark:text-slate-400;
 }
 
 @scope (#post) {
@@ -51,11 +51,11 @@ html {
   }
 
   a {
-    @apply text-blue-400 underline text-lg;
+    @apply text-sky-400 underline text-lg;
   }
 
   blockquote {
-    @apply border-r-4 border-gray-200 bg-gray-100 mb-4 px-3 py-3 rounded-l-xl;
+    @apply border-r-8 border-gray-200 dark:border-slate-600 bg-gray-100 dark:bg-slate-700 mb-4 px-3 py-3 rounded-l-xl;
   }
 
   blockquote p:last-child {
@@ -76,7 +76,7 @@ html {
   }
 
   hr {
-    @apply mb-4;
+    @apply mb-4 dark:border-slate-500;
   }
 
   img {
@@ -94,7 +94,7 @@ html {
 
 @scope (#preview) {
   a {
-    @apply text-blue-400 underline text-lg;
+    @apply text-sky-400 underline text-lg;
   }
 
   p {
