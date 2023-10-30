@@ -3,41 +3,42 @@ import Link from "next/link";
 import React from "react";
 import text from "src/data/text.json";
 import pic from "src/images/pic.png";
-import github from "src/images/github.svg";
-import gmail from "src/images/gmail.svg";
-import linkedin from "src/images/linkedin.svg";
-import youtube from "src/images/youtube.svg";
-import portfolio from "src/images/portfolio.svg";
-import medium from "src/images/medium.svg";
+
+import GitHub from "src/svg/GitHub";
+import Medium from "src/svg/Medium";
+import Portfolio from "src/svg/Portfolio";
+import YouTube from "src/svg/YouTube";
+import LinkedIn from "src/svg/LinkedIn";
+import Gmail from "src/svg/Gmail";
 
 const SOCIAL_LINKS = [
   {
-    icon: portfolio,
+    Icon: Portfolio,
     text: "Portfolio",
     link: "https://me.ahmedibrahim.dev/",
   },
   {
-    icon: medium,
+    Icon: Medium,
     text: "Medium",
     link: "https://blog.ahmedibrahim.dev/",
   },
   {
-    icon: github,
+    Icon: GitHub,
     text: "GitHub",
     link: "https://github.com/neuodev",
   },
   {
-    icon: gmail,
+    Icon: Gmail,
     text: "Email",
     link: "mailto:me@ahmedibrahim.dev",
   },
   {
-    icon: linkedin,
+    Icon: LinkedIn,
     text: "LinkedIn",
     link: "https://www.linkedin.com/in/neuodev/",
   },
   {
-    icon: youtube,
+    Icon: YouTube,
     text: "YouTube",
     link: "https://www.youtube.com/@neuodev",
   },
@@ -53,9 +54,9 @@ const AboutMe: React.FC<{}> = () => {
         <p className="mb-3 font-medium">{text.aboutme.bdoy}</p>
 
         <div className="flex flex-row gap-2">
-          {SOCIAL_LINKS.map(({ icon, text, link }) => (
-            <Link key={icon} href={link} target="_blank">
-              <Image width={30} height={30} src={icon} alt={text} />
+          {SOCIAL_LINKS.map(({ Icon, link }) => (
+            <Link key={link} href={link} target="_blank">
+              <Icon className="w-8 h-8 fill-black dark:fill-slate-400" />
             </Link>
           ))}
         </div>
