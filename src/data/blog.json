@@ -1,6 +1,11 @@
 {
   "posts": [
     {
+      "slug": "fresh-start",
+      "filename": "fresh-start.md",
+      "published": true
+    },
+    {
       "slug": "blog-anchor",
       "filename": "blog-anchor.md",
       "published": true
