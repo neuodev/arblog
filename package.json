@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "app:bg": "pm2 start \"next dev -p 9999\" --name arblog"
+    "app:bg": "pm2 start \"next dev -p 9999\" --name arblog",
+    "open": "open -a TextEdit"
   },
   "dependencies": {
     "classnames": "^2.3.2",
