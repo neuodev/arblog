@@ -28,7 +28,7 @@ const ThemeSwitcher: React.FC<{}> = () => {
   }, [theme]);
 
   useEffect(() => {
-    if (theme === Theme.Light) document.documentElement.classList.add("dark");
+    if (theme === Theme.Dark) document.documentElement.classList.add("dark");
     else document.documentElement.classList.remove("dark");
   }, [theme]);
 
