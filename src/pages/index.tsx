@@ -41,7 +41,7 @@ const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
 
           {isDev() && !post.published && (
             <div className="mt-4">
-              <span className="bg-amber-100 text-amber-500 px-2 py-1 rounded-full text-sm">
+              <span className="bg-amber-100 text-amber-500 dark:text-slate-500 px-2 py-1 rounded-full text-sm">
                 {text.notPublished}
               </span>
             </div>
