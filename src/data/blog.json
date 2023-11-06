@@ -1,14 +1,14 @@
 {
   "posts": [
     {
-      "slug": "hidden-history-of-education",
-      "filename": "hidden-history-of-education.md",
+      "slug": "being-proactive",
+      "filename": "being-proactive.md",
       "published": true
     },
     {
-      "slug": "browser-in-rust",
-      "filename": "browser-in-rust.md",
-      "published": false
+      "slug": "hidden-history-of-education",
+      "filename": "hidden-history-of-education.md",
+      "published": true
     },
     {
       "slug": "where-will-i-be-in-5-years",
