@@ -21,83 +21,79 @@ html {
   @apply bg-gray-100 dark:bg-slate-700  hover:bg-gray-200 dark:hover:bg-slate-600 shadow-md transition-colors px-4 py-3 cursor-pointer rounded-md dark:text-slate-400;
 }
 
-@scope (#post) {
-  h1 {
-    @apply text-4xl md:text-6xl md:leading-snug font-bold mb-8;
-  }
-
-  h2 {
-    @apply text-3xl md:text-5xl mb-4;
-  }
-
-  h3 {
-    @apply text-2xl md:text-4xl mb-4;
-  }
-
-  h4 {
-    @apply text-xl md:text-3xl mb-4;
-  }
-
-  h5 {
-    @apply text-lg md:text-2xl mb-4;
-  }
-
-  h6 {
-    @apply text-base md:text-xl mb-4;
-  }
-
-  p {
-    @apply font-medium text-base leading-loose mb-4;
-  }
-
-  a {
-    @apply text-sky-400 underline text-lg;
-  }
-
-  blockquote {
-    @apply border-r-8 border-gray-200 dark:border-slate-600 bg-gray-100 dark:bg-slate-700 mb-4 px-3 py-3 rounded-l-xl;
-  }
-
-  blockquote p:last-child {
-    @apply mb-0;
-  }
-
-  ul {
-    @apply list-disc list-inside mb-4 gap-1;
-  }
-
-  ol {
-    @apply list-decimal list-inside mb-4;
-  }
-
-  ul > li,
-  ol > li {
-    @apply mb-2;
-  }
-
-  hr {
-    @apply mb-4 dark:border-slate-500;
-  }
-
-  img {
-    @apply inline-block rounded-lg;
-  }
-
-  .img-container {
-    @apply flex flex-col items-center justify-center my-4;
-  }
-
-  .img-caption {
-    @apply inline-block w-full text-center mt-2 text-sm italic max-w-sm;
-  }
+#post h1 {
+  @apply text-4xl md:text-6xl md:leading-snug font-bold mb-8;
 }
 
-@scope (#preview) {
-  a {
-    @apply text-sky-400 underline text-lg;
-  }
+#post h2 {
+  @apply text-3xl md:text-5xl mb-4;
+}
 
-  p {
-    @apply inline leading-8;
-  }
+#post h3 {
+  @apply text-2xl md:text-4xl mb-4;
+}
+
+#post h4 {
+  @apply text-xl md:text-3xl mb-4;
+}
+
+#post h5 {
+  @apply text-lg md:text-2xl mb-4;
+}
+
+#post h6 {
+  @apply text-base md:text-xl mb-4;
+}
+
+#post p {
+  @apply font-medium text-base leading-loose mb-4;
+}
+
+#post a {
+  @apply text-sky-400 underline;
+}
+
+#post blockquote {
+  @apply border-r-8 border-gray-200 dark:border-slate-600 bg-gray-100 dark:bg-slate-700 mb-4 px-3 py-3 rounded-l-xl;
+}
+
+#post blockquote p:last-child {
+  @apply mb-0;
+}
+
+#post ul {
+  @apply list-disc list-inside mb-4 gap-1;
+}
+
+#post ol {
+  @apply list-decimal list-inside mb-4;
+}
+
+#post ul > li,
+#post ol > li {
+  @apply mb-2;
+}
+
+#post hr {
+  @apply mb-4 dark:border-slate-500;
+}
+
+#post img {
+  @apply inline-block rounded-lg;
+}
+
+#post .img-container {
+  @apply flex flex-col items-center justify-center my-4;
+}
+
+#post .img-caption {
+  @apply inline-block w-full text-center mt-2 text-sm italic max-w-sm;
+}
+
+#preview a {
+  @apply text-sky-400 underline;
+}
+
+#preview p {
+  @apply inline leading-8;
 }
