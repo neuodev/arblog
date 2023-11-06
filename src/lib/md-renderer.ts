@@ -11,4 +11,15 @@ export const markedRenderer: Partial<Renderer> = {
         </div>
     `;
   },
+  blockquote(quote) {
+    // default: `rtl`, when text is starting with `!` it should be `ltr`
+    const ltr = quote.startsWith("<p>!");
+    const parsed = quote.replace("<p>!", "<p>");
+
+    return `
+        <blockquote dir="${ltr ? "ltr" : "rtl"}">
+          ${parsed}
+        </blockquote>
+    `;
+  },
 };

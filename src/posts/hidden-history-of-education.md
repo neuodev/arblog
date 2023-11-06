@@ -10,14 +10,14 @@
 
 كان السبب الرئسي الذي من أجله أنشأت بروسيا التعليم النظامي هو اعتقادهم الخاطئ بان حرية الفرد هي تهديد صريح لوجودهم. كل هذا الكره لحرية الفرد تم استخلاصه من مدرسة واحدة للفيلسوف [يوهان ("Johann Gottlieb Fichte")](https://en.wikipedia.org/wiki/Johann_Gottlieb_Fichte). وبالأسفل اقتباس ليوهان عن رئيه في التعليم:
 
-‏> Education should aim at destroying free will so that after pupils are thus schooled they will be incapable through the rest of their lives of thinking or acting otherwise than as their school masters would have wished. When this technique has been perfected, every government that has been in charge of education for more than one generation will be able to control its subjects securely without the need of armies or policemen.
+> !Education should aim at destroying free will so that after pupils are thus schooled they will be incapable through the rest of their lives of thinking or acting otherwise than as their school masters would have wished. When this technique has been perfected, every government that has been in charge of education for more than one generation will be able to control its subjects securely without the need of armies or policemen.
 
-‏</br>
+</br>
 
 > يجب أن يهدف التعليم إلى تدمير الإرادة الحرة بحيث يصبح التلاميذ، بعد أن يتعلموا على هذا النحو، غير قادرين طوال بقية حياتهم على التفكير أو التصرف بشكل مختلف عما كان يرغب فيه معلموهم. وعندما يتم إتقان هذه التقنية، فإن كل حكومة كانت مسؤولة عن التعليم لأكثر من جيل واحد سوف تكون قادرة على السيطرة على رعاياها بشكل آمن دون الحاجة إلى الجيوش أو رجال الشرطة.
 
-‏</br>
-‏</br>
+</br>
+</br>
 
 ## الانتشار العالمي للتعليم النظامي
 
@@ -25,36 +25,25 @@
 
 [هورس مان ("Horace Mann")](https://en.wikipedia.org/wiki/Horace_Mann) هو الاب الروحي للتعليم النظامي الامريكي. كان [عضو في مجلس النواب ("United States House of Representatives")](https://en.wikipedia.org/wiki/United_States_House_of_Representatives). أمضي سنوات لدراسة أنظمة التعليم المختلفة في مختلف انحاء أوروبا وكان في غاية الدهشة بمما حققته بروسيا بالنظام التعليمي الخاص بها. سافر هو - وجميع اعظاء المجلس - لالقاء نظره عن كثب علي النظام التعليمي في بروسا. عندما رجع هورس الي امريكا تمكن من اقناع الكنجرس لتبني هذا النظام. علي مدار الثلاث العقود المتتالية تم ارسال الكثير من البعثات لبروسيا. تولي كل من شارك في البعثات منصب اداري كبير اما في الدولة او التعليم.
 
-
 تكمن هورس من جعل التعليم [اجباري في ولاية ماساتشوستس (1852)](https://www.findlaw.com/education/education-options/compulsory-education-laws-background.html) (كان رئيس الولاية وقتها احد افراد البعثات التي ذهبت الي بروسيا)، كان الاباء بين اما وضع ابنائهم في النظام التعليمي او الذهاب الي السجن او دفع غرامات باهظه. اتشر النظام التعليمي الجديد في وقت قياسي في جميع الولايات وفي انحاء امريكاء. وسرعان ما تقبل الشعب النظام التعليمي الجديد كا واقع فرض عليهم.
-
 
 في نفس الوقت الذي كان ينتشر التعليم فيه امريكاء كان ينتشر في جميع انحاء اوروبا والعالم (اليابان وكندا بالتحديد).
 
-
-‏</br>
-‏</br>
+</br>
+</br>
 
 #### الفيلسوف يوهان ("Johann Gottlieb Fichte")
 
+يقول يوهان:
 
-يقول يوهان: 
+> !The new education must consist essentially in this, that is completely destroy freedom of will in the soil which it undertakes to cultivate, and produce on the contrary strict necessity in the decisions of the will, the opposite being impossible, Such a will can henceforth be relied on with confidence and certainty.
 
-‏> The new education must consist essentially in this, that is completely destroy freedom of will in the soil which it undertakes to cultivate, and produce on the contrary strict necessity in the decisions of the will, the opposite being impossible, Such a will can henceforth be relied on with confidence and certainty.
-
-‏</br>
-
+</br>
 
 > يجب أن يقوم التعليم الجديد بشكل أساسي على هذا، **وهو تدمير حرية الإرادة في التربة التي تتعهد بزراعتها وإنتاجها**، على العكس من الضرورة الصارمة في قرارات الإرادة، والعكس مستحيل، ويمكن الاعتماد على مثل هذه الإرادة من الآن فصاعدا. بكل ثقة ويقين.
 
-
-‏</br>
-
+</br>
 
 وضع يوهان الاساس الذي تم بناء المدارس عليه اليوم، كان يعتمد علي مبداء عرفه من الفيلسوف [John Locke](https://en.wikipedia.org/wiki/John_Locke) وهو ان عقل الطفل حجر مصمت عند الولادة.
 
-وضع يوهان طريقة علمية لتعليم الاطفال (للنقش علي الحجر)، كانت عبارة عن اختيار موضوع متخصص جدا، ودراسته لمدة محددة، والتحكم فيما يجب ان يفكر فيه الطالب عند طرح الموضوع عليهم. ووضع امتحانات **موحدة**، يعاقب عليها الطالب عندما **يفكر في اجابة تخالف الجميع**. كل هذا مع طابع من القسوة المتمثلة في المواعيد الصارمة، وتقيد حرية الطالب (يجب ان يستاذن قبل ان يفعل اي شئ)، جمع الطلاب في فصول والجلوس في صفوف ومنع الطالب من الحركة. 
-
-
-
-
+وضع يوهان طريقة علمية لتعليم الاطفال (للنقش علي الحجر)، كانت عبارة عن اختيار موضوع متخصص جدا، ودراسته لمدة محددة، والتحكم فيما يجب ان يفكر فيه الطالب عند طرح الموضوع عليهم. ووضع امتحانات **موحدة**، يعاقب عليها الطالب عندما **يفكر في اجابة تخالف الجميع**. كل هذا مع طابع من القسوة المتمثلة في المواعيد الصارمة، وتقيد حرية الطالب (يجب ان يستاذن قبل ان يفعل اي شئ)، جمع الطلاب في فصول والجلوس في صفوف ومنع الطالب من الحركة.

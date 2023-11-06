@@ -4,11 +4,7 @@ import { AppProps } from "next/app";
 import "src/app/globals.css";
 import { Post } from "src/lib/posts";
 
-const App: React.FC<AppProps & { posts: Post[] }> = ({
-  Component,
-  pageProps,
-  posts,
-}) => {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <Layout>
       <Component {...pageProps} />
