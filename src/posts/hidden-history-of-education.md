@@ -12,12 +12,7 @@
 
 > !Education should aim at destroying free will so that after pupils are thus schooled they will be incapable through the rest of their lives of thinking or acting otherwise than as their school masters would have wished. When this technique has been perfected, every government that has been in charge of education for more than one generation will be able to control its subjects securely without the need of armies or policemen.
 
-</br>
-
 > يجب أن يهدف التعليم إلى تدمير الإرادة الحرة بحيث يصبح التلاميذ، بعد أن يتعلموا على هذا النحو، غير قادرين طوال بقية حياتهم على التفكير أو التصرف بشكل مختلف عما كان يرغب فيه معلموهم. وعندما يتم إتقان هذه التقنية، فإن كل حكومة كانت مسؤولة عن التعليم لأكثر من جيل واحد سوف تكون قادرة على السيطرة على رعاياها بشكل آمن دون الحاجة إلى الجيوش أو رجال الشرطة.
-
-</br>
-</br>
 
 ## الانتشار العالمي للتعليم النظامي
 
@@ -29,20 +24,13 @@
 
 في نفس الوقت الذي كان ينتشر التعليم فيه امريكاء كان ينتشر في جميع انحاء اوروبا والعالم (اليابان وكندا بالتحديد).
 
-</br>
-</br>
-
 #### الفيلسوف يوهان ("Johann Gottlieb Fichte")
 
 يقول يوهان:
 
 > !The new education must consist essentially in this, that is completely destroy freedom of will in the soil which it undertakes to cultivate, and produce on the contrary strict necessity in the decisions of the will, the opposite being impossible, Such a will can henceforth be relied on with confidence and certainty.
 
-</br>
-
 > يجب أن يقوم التعليم الجديد بشكل أساسي على هذا، **وهو تدمير حرية الإرادة في التربة التي تتعهد بزراعتها وإنتاجها**، على العكس من الضرورة الصارمة في قرارات الإرادة، والعكس مستحيل، ويمكن الاعتماد على مثل هذه الإرادة من الآن فصاعدا. بكل ثقة ويقين.
-
-</br>
 
 وضع يوهان الاساس الذي تم بناء المدارس عليه اليوم، كان يعتمد علي مبداء عرفه من الفيلسوف [John Locke](https://en.wikipedia.org/wiki/John_Locke) وهو ان عقل الطفل حجر مصمت عند الولادة.
 

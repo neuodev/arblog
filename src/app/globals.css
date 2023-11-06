@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* todo: should be replaced with html attr when possible */
-/* * {
-  direction: rtl;
-} */
-
 html {
   @apply bg-gray-50 dark:bg-slate-800;
 }
@@ -26,27 +21,27 @@ html {
 }
 
 #post h2 {
-  @apply text-3xl md:text-5xl mb-4;
+  @apply text-3xl md:text-5xl mb-8 mt-8;
 }
 
 #post h3 {
-  @apply text-2xl md:text-4xl mb-4;
+  @apply text-2xl md:text-4xl mb-8 mt-4;
 }
 
 #post h4 {
-  @apply text-xl md:text-3xl mb-4;
+  @apply text-xl md:text-3xl mb-8 mt-4;
 }
 
 #post h5 {
-  @apply text-lg md:text-2xl mb-4;
+  @apply text-lg md:text-2xl mb-4 mt-4;
 }
 
 #post h6 {
-  @apply text-base md:text-xl mb-4;
+  @apply text-base md:text-xl mb-8 mt-4;
 }
 
 #post p {
-  @apply font-medium text-base leading-loose mb-4;
+  @apply font-medium text-base leading-loose mb-8;
 }
 
 #post a {
@@ -54,7 +49,7 @@ html {
 }
 
 #post blockquote {
-  @apply border-r-8 border-gray-200 dark:border-slate-600 bg-gray-100 dark:bg-slate-700 mb-4 px-4 py-4 rounded-xl italic;
+  @apply border-r-8 border-gray-200 dark:border-slate-600 bg-gray-100 dark:bg-slate-700 px-4 py-4 rounded-xl italic mb-8;
 }
 
 #post blockquote[dir="ltr"] {
@@ -66,20 +61,20 @@ html {
 }
 
 #post ul {
-  @apply list-disc list-inside mb-4 gap-1;
+  @apply list-disc list-inside mb-8 gap-1;
 }
 
 #post ol {
-  @apply list-decimal list-inside mb-4;
+  @apply list-decimal list-inside mb-8;
 }
 
 #post ul > li,
 #post ol > li {
-  @apply mb-2;
+  @apply mb-3;
 }
 
 #post hr {
-  @apply mb-4 dark:border-slate-500;
+  @apply dark:border-slate-500 mb-8;
 }
 
 #post img {
