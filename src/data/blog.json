@@ -1,6 +1,11 @@
 {
   "posts": [
     {
+      "slug": "status-update-0",
+      "filename": "status-update-0.md",
+      "published": true
+    },
+    {
       "slug": "being-proactive",
       "filename": "being-proactive.md",
       "published": true

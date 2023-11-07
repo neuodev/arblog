@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
   {
     Icon: Portfolio,
     text: "Portfolio",
-    link: "https://me.ahmedibrahim.dev/",
+    link: "https://ahmedibrahim.dev/",
   },
   {
     Icon: Medium,
