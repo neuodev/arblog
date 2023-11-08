@@ -77,6 +77,11 @@ html {
   @apply dark:border-slate-500 mb-8;
 }
 
+/* todo: use better name */
+#post hl {
+  @apply bg-gray-200 text-gray-800 dark:bg-slate-700 dark:text-slate-300 rounded-sm px-2;
+}
+
 #post img {
   @apply inline-block rounded-lg;
 }
