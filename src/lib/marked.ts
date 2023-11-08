@@ -1,6 +1,11 @@
-import { Renderer } from "marked";
+import {
+  Renderer,
+  TokenizerAndRendererExtension,
+  TokenizerObject,
+} from "marked";
+import marked from "marked";
 
-export const markedRenderer: Partial<Renderer> = {
+const renderer: Partial<Renderer> = {
   image(href, _title, text) {
     if (!text) return `<img src="${href}">`;
 
@@ -23,3 +28,7 @@ export const markedRenderer: Partial<Renderer> = {
     `;
   },
 };
+
+marked.use({ renderer });
+
+export default marked;
