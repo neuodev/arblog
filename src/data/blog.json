@@ -1,6 +1,11 @@
 {
   "posts": [
     {
+      "slug": "how-are-we-trained",
+      "filename": "how-are-we-trained.md",
+      "published": true
+    },
+    {
       "slug": "status-update-0",
       "filename": "status-update-0.md",
       "published": true
