@@ -1,6 +1,11 @@
 {
   "posts": [
     {
+      "slug": "test",
+      "filename": "test.md",
+      "published": false
+    },
+    {
       "slug": "how-are-we-trained",
       "filename": "how-are-we-trained.md",
       "published": true
