@@ -1,0 +1,17 @@
+{
+  "name": "arblog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/neuodev/arblog.git",
+  "author": "Ahmed Ibrahim <me@ahmedibrahim.dev>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:client": "yarn workspace @arblog/client build",
+    "export:client": "yarn workspace @arblog/client next export"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}

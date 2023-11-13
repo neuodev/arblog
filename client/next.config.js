@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.CI ? "export" : undefined,
+  output: "export",
 };
 
 module.exports = nextConfig;
