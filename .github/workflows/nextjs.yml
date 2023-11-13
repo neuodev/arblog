@@ -47,8 +47,8 @@ jobs:
         run: yarn
       - name: Build client
         run: yarn build:client
-      # - name: Static HTML export
-      #   run: yarn export:client
+      - name: Static HTML export
+        run: yarn export:client
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
