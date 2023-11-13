@@ -34,3 +34,25 @@ export const addEmail = asyncHandler(
     });
   }
 );
+
+export const confirmEmail = asyncHandler(
+  async (
+    req: Request<{}, {}, {}, { token: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
+    const { token } = req.query;
+    if (!token)
+      return next(new ErrorResponse("Missing confirmation token", 400));
+
+    const tokenHash = crypto.createHash("sha256").update(token).digest("hex");
+
+    const email = await Email.findOne({ token: tokenHash, confirmed: false });
+    if (!email) return next(new ErrorResponse("Invalid token", 400));
+
+    email.confirmed = true;
+    await email.save();
+
+    res.status(200).json({ success: true });
+  }
+);
