@@ -16,6 +16,11 @@ const emailSchema = new Schema(
       default: false,
       required: true,
     },
+    token: {
+      type: String,
+      required: true,
+      unique: true,
+    },
   },
   {
     timestamps: true,

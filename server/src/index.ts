@@ -1,13 +1,9 @@
 import express from "express";
-import dotenv from "dotenv";
 import connectDB from "./config/db";
 import emailRouter from "./routes/email";
 import errorHandler from "./middleware/error";
 
-// Server Setup
-dotenv.config();
 connectDB();
-
 const app = express();
 
 // Middlewares
