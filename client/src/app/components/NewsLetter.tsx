@@ -23,7 +23,17 @@ const NewsLetter: React.FC<{}> = () => {
             {loading ? text.newsletter.subscribing : text.newsletter.subscribe}
           </button>
         </div>
-        <p className="text-sm mt-1 text-red-500 h-2">{error}</p>
+        <div className="h-7">
+          {error ? (
+            <p className="text-sm mt-1 text-red-500">{error}</p>
+          ) : (
+            success && (
+              <p className="text-sm mt-1 text-gray-500">
+                {text.newsletter.successMsg}
+              </p>
+            )
+          )}
+        </div>
       </div>
     </div>
   );

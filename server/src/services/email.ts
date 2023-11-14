@@ -21,7 +21,7 @@ export async function sendConfirmationEmail(to: string, token: string) {
     html: `
           <h1>Thank you!</h1>
           <div>
-              <a href="http://localhost:4000/api/v1/email/confirm?token=${token}" target="_blank">Click here to confirm your email...</a>
+              <a href="https://server.ahmedibrahim.dev/api/v1/email/confirm?token=${token}" target="_blank">Click here to confirm your email...</a>
           </div>
         `,
   });

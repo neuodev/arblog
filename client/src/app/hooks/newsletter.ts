@@ -1,4 +1,5 @@
 import { useCallback, useState } from "react";
+import text from "src/data/text.json";
 
 export function useJoinNewsLetterForm() {
   const [loading, setLoading] = useState<boolean>(false);
@@ -7,6 +8,7 @@ export function useJoinNewsLetterForm() {
   const [email, setEmail] = useState<string>("");
 
   const join = useCallback(async () => {
+    // todo: add validation
     if (!email) return;
 
     // reset state
@@ -16,16 +18,21 @@ export function useJoinNewsLetterForm() {
 
     try {
       // todo: move the server name to be a env var
-      await fetch("https://server.ahmedibrahim.dev/api/v1/email/", {
+      const res = await fetch("https://server.ahmedibrahim.dev/api/v1/email/", {
         method: "POST",
         mode: "cors",
         headers: {
           "Content-Type": "application/json",
         },
+        body: JSON.stringify({ email }),
       });
-      setSuccess(true);
+
+      if (res.status === 200 || res.status === 201) {
+        setSuccess(true);
+        setEmail("");
+      } else setError(text.general.unexpectedError);
     } catch (error) {
-      setError("Unexpected error happend!");
+      setError(text.general.unexpectedError);
     }
     setLoading(false);
   }, [email]);
