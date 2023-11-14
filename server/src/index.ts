@@ -4,11 +4,13 @@ import emailRouter from "./routes/email";
 import errorHandler from "./middleware/error";
 import https from "node:https";
 import fs from "node:fs";
+import cors from "cors";
 
 connectDB();
 const app = express();
 
 // Middlewares
+app.use(cors());
 app.use(express.json());
 
 // API Endpoints

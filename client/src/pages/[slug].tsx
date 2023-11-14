@@ -7,6 +7,7 @@ import Link from "next/link";
 import { isProd } from "src/lib/env";
 import AboutMe from "src/app/components/AboutMe";
 import Head from "next/head";
+import NewsLetter from "src/app/components/NewsLetter";
 
 const Post: React.FC<{ post: Post }> = ({ post }) => {
   return (
@@ -22,7 +23,7 @@ const Post: React.FC<{ post: Post }> = ({ post }) => {
       </Head>
       <div className="py-16 px-4 max-w-screen-md mx-auto">
         <div className="mb-4">
-          <Link href="/" className="btn-light inline-block mb-4">
+          <Link href="/" className="btn inline-block mb-4">
             {text.backToHome}
           </Link>
         </div>
@@ -30,8 +31,9 @@ const Post: React.FC<{ post: Post }> = ({ post }) => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
 
-        <div className="my-20">
+        <div className="flex flex-col gap-8 my-20">
           <AboutMe />
+          <NewsLetter />
         </div>
       </div>
     </>

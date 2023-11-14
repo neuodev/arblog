@@ -5,6 +5,7 @@ import text from "src/data/text.json";
 import AboutMe from "src/app/components/AboutMe";
 import { isDev } from "src/lib/env";
 import Head from "next/head";
+import NewsLetter from "src/app/components/NewsLetter";
 
 const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
   return (
@@ -16,8 +17,9 @@ const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="ar_AA" />
       </Head>
-      <div className="mb-16">
+      <div className="flex flex-col mb-16 gap-8">
         <AboutMe />
+        <NewsLetter />
       </div>
 
       {posts.map((post) => (
