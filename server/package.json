@@ -5,15 +5,24 @@
   "license": "MIT",
   "scripts": {
     "dev": "env-cmd nodemon src/index.ts",
+    "dev:broadcast": "env-cmd nodemon src/scripts/broadcast.ts",
     "build": "tsc"
   },
   "dependencies": {
+    "@react-email/button": "^0.0.11",
+    "@react-email/font": "^0.0.4",
+    "@react-email/head": "^0.0.6",
+    "@react-email/html": "^0.0.6",
+    "@react-email/render": "0.0.9",
+    "@react-email/tailwind": "^0.0.12",
+    "@react-email/text": "^0.0.6",
     "@types/express": "^4.17.21",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
+    "marked": "^10.0.0",
     "mongoose": "^8.0.0"
   },
   "devDependencies": {
