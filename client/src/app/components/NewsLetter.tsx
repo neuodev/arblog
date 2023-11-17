@@ -16,7 +16,7 @@ const NewsLetter: React.FC<{}> = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             dir="ltr"
-            className="border h-auto w-full rounded-md px-4 placeholder:text-right"
+            className="border dark:border-slate-900 h-auto w-full rounded-md px-4 placeholder:text-right dark:bg-slate-800 focus:outline-none"
             placeholder={text.newsletter.inputPlaceholder}
           />
           <button disabled={loading} className="btn w-56" onClick={join}>

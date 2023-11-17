@@ -8,6 +8,7 @@ import { isProd } from "src/lib/env";
 import AboutMe from "src/app/components/AboutMe";
 import Head from "next/head";
 import NewsLetter from "src/app/components/NewsLetter";
+import { formatDate } from "src/lib/date";
 
 const Post: React.FC<{ post: Post }> = ({ post }) => {
   return (
@@ -27,6 +28,9 @@ const Post: React.FC<{ post: Post }> = ({ post }) => {
             {text.backToHome}
           </Link>
         </div>
+        <p className="text-sm font-bold mb-2 underline">
+          {formatDate(post.createdAt)}
+        </p>
         <div id="post">
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>

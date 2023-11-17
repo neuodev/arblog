@@ -12,6 +12,7 @@ export type Post = {
   slug: string;
   filename: string;
   published: boolean;
+  createdAt: string;
   header: string;
   preview: { raw: string; parsed: string };
   html: string;
@@ -46,19 +47,18 @@ async function loadPostInfo(
     slug: post.slug,
     filename: post.filename,
     published: post.published,
+    createdAt: post.createdAt,
     header: header.text,
     preview: { parsed: marked.parse(preview.raw), raw: preview.raw },
   };
 }
 
 export async function getPosts(): Promise<Array<Omit<Post, "html">>> {
-  const posts = await Promise.all(
-    blog.posts
-      .filter((post) => (isProd() ? post.published : true))
-      .map(loadPostInfo)
-  );
+  const posts = isProd()
+    ? blog.posts.filter((post) => post.published)
+    : blog.posts;
 
-  return posts;
+  return await Promise.all(posts.map(loadPostInfo));
 }
 
 export async function getPostBySlug(

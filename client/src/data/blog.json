@@ -3,72 +3,86 @@
     {
       "slug": "test",
       "filename": "test.md",
-      "published": false
+      "published": false,
+      "createdAt": "Nov 13, 2023"
     },
     {
       "slug": "i-want-to-be-rich",
       "filename": "i-want-to-be-rich.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 13, 2023"
     },
     {
       "slug": "how-i-plan-to-educate-my-kids",
       "filename": "how-i-plan-to-educate-my-kids.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 11, 2023"
     },
     {
       "slug": "how-are-we-trained",
       "filename": "how-are-we-trained.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 9, 2023"
     },
     {
       "slug": "status-update-0",
       "filename": "status-update-0.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 7, 2023"
     },
     {
       "slug": "being-proactive",
       "filename": "being-proactive.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 6, 2023"
     },
     {
       "slug": "hidden-history-of-education",
       "filename": "hidden-history-of-education.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 5, 2023"
     },
     {
       "slug": "where-will-i-be-in-5-years",
       "filename": "where-will-i-be-in-5-years.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 4, 2023"
     },
     {
       "slug": "live-with-new-ideas",
       "filename": "live-with-new-ideas.md",
-      "published": true
+      "published": true,
+      "createdAt": "Nov 4, 2023"
     },
     {
       "slug": "how-to-read-a-book",
       "filename": "how-to-read-a-book.md",
-      "published": true
+      "published": true,
+      "createdAt": "Oct 31, 2023"
     },
     {
       "slug": "fresh-start",
       "filename": "fresh-start.md",
-      "published": true
+      "published": true,
+      "createdAt": "Oct 30, 2023"
     },
     {
       "slug": "blog-anchor",
       "filename": "blog-anchor.md",
-      "published": true
+      "published": true,
+      "createdAt": "Oct 28, 2023"
     },
     {
       "slug": "why-i-have-no-phone",
       "filename": "why-i-have-no-phone.md",
-      "published": true
+      "published": true,
+      "createdAt": "Oct 28, 2023"
     },
     {
       "slug": "why-i-left-medical-school",
       "filename": "why-i-left-med-school.md",
-      "published": true
+      "published": true,
+      "createdAt": "Oct 28, 2023"
     }
   ]
 }
