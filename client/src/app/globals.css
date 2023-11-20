@@ -86,7 +86,8 @@ html {
   @apply inline-block rounded-lg;
 }
 
-#post .img-container {
+#post .img-container,
+#post .img-container a {
   @apply flex flex-col items-center justify-center my-4;
 }
 
