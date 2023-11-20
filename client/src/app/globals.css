@@ -87,8 +87,19 @@ html {
 }
 
 #post .img-container,
-#post .img-container a {
+#post .img-container a,
+#preview .img-container,
+#preview .img-container a {
   @apply flex flex-col items-center justify-center my-4;
+}
+
+#preview .img-container,
+#preview .img-container a {
+  @apply mb-0;
+}
+
+#preview #post-body:has(.img-container) + #more {
+  @apply hidden;
 }
 
 #post .img-caption {

@@ -41,12 +41,15 @@ const Home: React.FC<{ posts: Array<Post> }> = ({ posts }) => {
             <div id="preview" className="inline">
               <div
                 className="inline"
+                id="post-body"
                 dangerouslySetInnerHTML={{ __html: post.preview.parsed }}
               />
-              <span>...</span>
-              <Link className="link" href={post.slug}>
-                <span>{text.more}</span>
-              </Link>
+              <span id="more">
+                <span>...</span>
+                <Link className="link" href={post.slug}>
+                  <span>{text.more}</span>
+                </Link>
+              </span>
             </div>
 
             {isDev() && !post.published && (
