@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "build:client": "yarn workspace @arblog/client build",
-    "export:client": "yarn workspace @arblog/client next export"
+    "export:client": "yarn workspace @arblog/client next export",
+    "new:post": "yarn workspace @arblog/client new:post"
   },
   "workspaces": [
     "client",

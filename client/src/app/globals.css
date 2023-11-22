@@ -68,6 +68,14 @@ html {
   @apply list-decimal list-inside mb-8;
 }
 
+#post ol li .img-container {
+  @apply mx-5 mb-0;
+}
+
+#post ol li .img-container .img-caption {
+  @apply mb-1;
+}
+
 #post ul > li,
 #post ol > li {
   @apply mb-3;
