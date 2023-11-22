@@ -1,4 +1,4 @@
-‏# Money
+‏# ملحوظات عن سلوك الناس تجاه المــــــال
 
 [![ملخص لقاء مع مورجان هاوسيل عن المـــــال](morgan-housel.png)](https://www.youtube.com/watch?v=LcCtv9UkILI)
 
