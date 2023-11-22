@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "os-azkar-website",
+      "filename": "os-azkar-website.md",
+      "published": false,
+      "createdAt": "Nov 22, 2023"
+    },
+    {
       "slug": "test",
       "filename": "test.md",
       "published": false,
@@ -15,8 +21,8 @@
     {
       "slug": "usd-is-50-egp",
       "filename": "usd-is-50-egp.md",
-      "published": false,
-      "createdAt": "Nov 20, 2023"
+      "published": true,
+      "createdAt": "Nov 22, 2023"
     },
     {
       "slug": "psychology-of-money-interview",
