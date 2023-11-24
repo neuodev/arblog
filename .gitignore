@@ -12,6 +12,9 @@
 # next.js
 client/.next/
 client/out/
+client/src/posts/*.private.md
+client/src/data/*.private.json
+
 
 # production
 /build
