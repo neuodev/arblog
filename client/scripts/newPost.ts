@@ -18,9 +18,9 @@ function getOps(): {
   const slug = args[2];
   if (!slug) throw new Error("Missing post slug");
 
-  const open = !!args.find((arg) => arg === "open" || "-o" || "--open");
-  const isPrivate = !!args.find(
-    (arg) => arg === "private" || "--private" || "-p" || "--prv"
+  const open = args.some((arg) => ["open", "-o", "--open"].includes(arg));
+  const isPrivate = args.some((arg) =>
+    ["private", "--private", "-p", "--prv"].includes(arg)
   );
 
   return {

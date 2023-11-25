@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "slug": "weak-logic",
+      "filename": "weak-logic.md",
+      "published": false,
+      "createdAt": "Nov 25, 2023"
+    },
+    {
+      "slug": "collage-dropout-case-study",
+      "filename": "collage-dropout-case-study.md",
+      "published": false,
+      "createdAt": "Nov 25, 2023"
+    },
+    {
       "slug": "os-azkar-website",
       "filename": "os-azkar-website.md",
       "published": false,
