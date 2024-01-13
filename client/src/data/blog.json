@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "useless-people",
+      "filename": "useless-people.md",
+      "published": false,
+      "createdAt": "Jan 13, 2024"
+    },
+    {
       "slug": "weak-logic",
       "filename": "weak-logic.md",
       "published": false,
