@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "space",
+      "filename": "space.md",
+      "published": false,
+      "createdAt": "Feb 1, 2024"
+    },
+    {
       "slug": "useless-people",
       "filename": "useless-people.md",
       "published": true,
