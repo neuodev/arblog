@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "sign-of-weakness",
+      "filename": "sign-of-weakness.md",
+      "published": false,
+      "createdAt": "Feb 15, 2024"
+    },
+    {
       "slug": "things",
       "filename": "things.md",
       "published": false,
