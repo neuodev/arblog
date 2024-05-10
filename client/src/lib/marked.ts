@@ -1,13 +1,9 @@
-import {
-  Renderer,
-  TokenizerAndRendererExtension,
-  TokenizerObject,
-} from "marked";
+import { Renderer } from "marked";
 import marked from "marked";
 
-const renderer: Partial<Renderer> = {
+export const renderer: Partial<Renderer> = {
   image(href, _title, text) {
-    if (!text) return `<img src="${href}">`;
+    if (!text) return `<img src="${href}" title="Image" alt="Image...">`;
 
     return `
         <div class="img-container">

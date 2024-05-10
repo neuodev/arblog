@@ -1,6 +1,6 @@
-import { GetStaticPropsContext, Metadata } from "next";
+import { GetStaticPropsContext } from "next";
 import React from "react";
-import { Post, getPostBySlug } from "src/lib/posts";
+import { Post as IPost, getPostBySlug } from "src/lib/posts";
 import blog from "src/data/blog.json";
 import text from "src/data/text.json";
 import Link from "next/link";
@@ -10,17 +10,17 @@ import Head from "next/head";
 import NewsLetter from "src/app/components/NewsLetter";
 import { formatDate } from "src/lib/date";
 
-const Post: React.FC<{ post: Post }> = ({ post }) => {
+const Post: React.FC<{ post: IPost }> = ({ post }) => {
   return (
     <>
       <Head>
         <title>
           {post.header} | {text.ahmedIbrahim}
-          <meta property="og:title" content={post.header} />
-          <meta property="og:description" content={post.preview.raw} />
-          <meta property="og:type" content="article" />
-          <meta property="og:locale" content="ar_AA" />
         </title>
+        <meta property="og:title" content={post.header} />
+        <meta property="og:description" content={post.preview.raw} />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ar_AA" />
       </Head>
       <div className="py-16 px-4 max-w-screen-md mx-auto">
         <div className="mb-4">
@@ -53,9 +53,7 @@ export async function getStaticProps(
   if (!slug) throw new Error("Invalid or missing post slug");
   const post = await getPostBySlug(slug);
 
-  return {
-    props: { post },
-  };
+  return { props: { post } };
 }
 
 export async function getStaticPaths() {
