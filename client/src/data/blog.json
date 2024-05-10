@@ -25,36 +25,6 @@
       "createdAt": "Jan 13, 2024"
     },
     {
-      "slug": "weak-logic",
-      "filename": "weak-logic.md",
-      "published": false,
-      "createdAt": "Nov 25, 2023"
-    },
-    {
-      "slug": "collage-dropout-case-study",
-      "filename": "collage-dropout-case-study.md",
-      "published": false,
-      "createdAt": "Nov 25, 2023"
-    },
-    {
-      "slug": "os-azkar-website",
-      "filename": "os-azkar-website.md",
-      "published": false,
-      "createdAt": "Nov 22, 2023"
-    },
-    {
-      "slug": "test",
-      "filename": "test.md",
-      "published": false,
-      "createdAt": "2023-11-2"
-    },
-    {
-      "slug": "one-to-five-off",
-      "filename": "one-to-five-off.md",
-      "published": false,
-      "createdAt": "Nov 17, 2023"
-    },
-    {
       "slug": "usd-is-50-egp",
       "filename": "usd-is-50-egp.md",
       "published": true,
