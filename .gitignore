@@ -39,4 +39,6 @@ yarn-error.log*
 next-env.d.ts
 
 
+# nextjs
 .next/
+out/

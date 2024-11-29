@@ -29,6 +29,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
+      - name: Enable pnpm
+        run: corepack enable pnpm
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
@@ -42,15 +44,15 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yml') }}-
       - name: Install dependencies
-        run: pnpm
+        run: pnpm install
       - name: Build client
         run: pnpm build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./client/out
+          path: ./out
 
   deploy:
     environment:
