@@ -1,5 +1,5 @@
 import { Renderer } from "marked";
-import marked from "marked";
+import { marked } from "marked";
 
 export const renderer: Partial<Renderer> = {
   image(href, _title, text) {
